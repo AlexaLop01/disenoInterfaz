@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,5 +20,50 @@
             <a href="./formulario.html">Formulario</a>
         </nav>
     </header>
+    <form action="#">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre y apellidos:</label>
+            <input id="nombre" type="text" autofocus required><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input id="email" type="email" required><br>
+
+            <label for="url">Url</label>
+            <input id="url" type="url" placeholder="Escribe la Url de tu página web personal" ><br>
+           
+            <label for="fecha">Fecha: </label>
+            <input id="fecha" type="date"><br>
+
+            <label for="tiempo">Tiempo: </label>
+            <input id="tiempo" type="time"><br>
+
+            <label for="fechaHnac">Fecha y hora de nacimiento: </label>
+            <input id="fechaHnac" type="datetime"><br>
+
+            <label for="mes">Mes:</label>
+            <input id="mes" type="month"><br>
+
+            <label for="semana">Semana:</label>
+            <input id="semana" type="week"><br>
+
+            <label for="rango">Numero (min -10, max 10): </label>
+            <input id="rango" type="number" min="-10" max="10" step="1" value="0"><br>
+
+            <label for="intervalo">Intervalo (min -10, max 10): </label>
+            <input id="intervalo" type="range" min="-10" max="10"><br>
+
+            <label for="telefono">Telefono: </label>
+            <input id="telefono" type="tel" placeholder="(xxx) xxx-xxxx" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" ><br>
+
+            <label for="busqueda">Término de busqueda: </label>
+            <input id="busqueda" type="search"><br>
+
+            <label for="colorFav">Color favorito: </label>
+            <input id="colorFav" type="color"><br>
+
+            <button>Enviar</button>
+        </fieldset>
+    </form>
 </body>
 </html>
